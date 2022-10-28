@@ -28,6 +28,16 @@ body {
 }
 
 .heading-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-font {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+.menu-font {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
@@ -68,6 +78,17 @@ body {
 .bg-black {
     background: #000 !important;
 }
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 
 /*-----------------------------------------------------------Footer*/
 
@@ -124,10 +145,10 @@ body {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 220px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 220px);
     }
 }
