@@ -63,6 +63,7 @@ This is an ecommerce site, selling leanring curricula to parents and teachers. I
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 1. A database
+1. [Kaggle:](https://www.kaggle.com/)
 
 ## Testing
 
@@ -115,7 +116,28 @@ Check details to put here!
 
 ### Media
 
--   Website background is a mirrored version a photo by [Kimberly Farmer](https://unsplash.com/@kimberlyfarmer) on [Unsplash](https://unsplash.com/photos/lUaaKCUANVI)
+-   Website background is a mirrored version of a photo by [Kimberly Farmer](https://unsplash.com/@kimberlyfarmer) on [Unsplash](https://unsplash.com/photos/lUaaKCUANVI)
+
+-   Pencils photo by [Jess Bailey](https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+-   Puzzle photo by [Hans-Peter Gauster](https://unsplash.com/@sloppyperfectionist?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unslpash](https://unsplash.com/s/photos/learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+-   Calculator photo by [AnoushkaP](https://unsplash.com/@_purianoushka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/maths?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+-   Pyramids photo by [Shotaro Hamasaki](https://unsplash.com/ja/@_shography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pyramids%27?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+-  Globe photo by [Jan Kopřiva](https://unsplash.com/@jxk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/geography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText]
+
+-  Chemistry photo Photo by <a href="https://unsplash.com/@alexkondratiev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Kondratiev</a> on <a href="https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+-  Computing photo Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+-  Dice photo by Photo by <a href="https://unsplash.com/@grizzlybear?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Petersson</a> on <a href="https://unsplash.com/s/photos/bingo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  
+  
+  
+  
 
 ### Acknowledgements
 
