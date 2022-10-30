@@ -28,13 +28,14 @@ body {
 }
 
 .heading-font {
+    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
 
 .banner-font {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: medium;
+    font-size: large;
 }
 
 .menu-font {
