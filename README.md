@@ -126,9 +126,11 @@ Check details to put here!
 
 -   Pyramids photo by [Shotaro Hamasaki](https://unsplash.com/ja/@_shography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pyramids%27?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
--  Globe photo by [Jan Kopřiva](https://unsplash.com/@jxk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/geography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText]
+-  Globe Photo by <a href="https://unsplash.com/@amyjoyhumphries?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amy Humphries</a> on <a href="https://unsplash.com/s/photos/globe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
--  Chemistry photo Photo by <a href="https://unsplash.com/@alexkondratiev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Kondratiev</a> on <a href="https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+-  Chemistry photo Photo by <a href="https://unsplash.com/@myphotocave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raghav Bhasin</a> on <a href="https://unsplash.com/s/photos/chemistry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 -  Computing photo Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
