@@ -159,3 +159,23 @@ body {
         height: calc(100vh - 220px);
     }
 }
+
+/* adjust card sizes on extra small screens */
+
+@media (max-width: 600px) {
+    .card-img-top {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+}
+
+/* adjust card sizes on small screens */
+
+@media (min-width: 600px) and (max-width: 992px) {
+    .card-img-top {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+    }
+}

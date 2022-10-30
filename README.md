@@ -84,6 +84,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
+### Problems Encountered
+
+-  Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
+
 ### Known Bugs
 
 -   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
