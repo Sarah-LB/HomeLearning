@@ -110,6 +110,8 @@ Check details to put here!
 
 -   CSS code taken from [Bulma](https://bulma.io/) to size and position font awesome icons
 
+-   Footer positioning inspired by an [article on DEV site](https://dev.to/niorad/keeping-the-footer-at-the-bottom-with-css-grid-15mf0)
+
 ### Content
 
 -   All content was written by the developer with inspiration taken from the Code Institute Walkthrough Project.

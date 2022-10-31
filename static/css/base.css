@@ -1,13 +1,17 @@
 html {
     height: 100%;
+    width: 100%
 }
 
 body {
     background: url('/media/pile_of_books.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
 }
 
 /* from Bulma to centre and size icons */
@@ -86,7 +90,15 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: none;
+	background: white;
+	z-index: -1;
+}
+
+.overlay-content {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: white;
 	z-index: -1;
 }
 
@@ -96,14 +108,18 @@ body {
     object-fit: cover;
 }
 
-
 /*-----------------------------------------------------------Footer*/
+
+.content-footer {
+    margin-top: 30px;
+}
 
 .content-footer ul{
     margin: 0;
     padding: 0;
     min-height: 25px;
 }
+
 .footer-font h2 {
     font-size: 14px;
     font-weight: 500;
@@ -124,6 +140,7 @@ body {
     color: #fff;
     padding: 0 5px;
 }
+
 
 /* -------------------------------- Media Queries */
 
