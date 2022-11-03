@@ -31,6 +31,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.subheading-font {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #ef5350;
+}
+
 .heading-font {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
