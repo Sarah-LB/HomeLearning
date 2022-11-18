@@ -31,9 +31,16 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.subheading-font {
+.orange-subheading-font {
     font-family: 'Fuzzy Bubbles', cursive;
-    color: #ef5350;
+    color: #ff5722;
+    font-weight: 700;
+}
+
+.black-subheading-font {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: black;
+    font-weight: 700;
 }
 
 .heading-font {
