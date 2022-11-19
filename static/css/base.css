@@ -31,6 +31,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+
 .orange-subheading-font {
     font-family: 'Fuzzy Bubbles', cursive;
     color: #ff5722;
@@ -158,38 +159,6 @@ a.category-badge > span.badge:hover {
 }
 
 
-/*-----------------------------------------------------------Footer*/
-
-.content-footer {
-    margin-top: 30px;
-}
-
-.content-footer ul{
-    margin: 0;
-    padding: 0;
-    min-height: 25px;
-}
-
-.footer-font h2 {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-
-
-.socialitem-footer {
-    font-size: 30px;
-    padding: 0;
-    display: inline;
-}
-
-.socialitem-footer a {
-    color: #fff;
-    padding: 0 5px;
-}
 
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -243,7 +212,41 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* ------------------------------- bootstrap toasts */
+
+/* --------------------------------------------------------------------------------- Footer*/
+
+.content-footer {
+    margin-top: 30px;
+}
+
+.content-footer ul{
+    margin: 0;
+    padding: 0;
+    min-height: 25px;
+}
+
+.footer-font h2 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.socialitem-footer {
+    font-size: 30px;
+    padding: 0;
+    display: inline;
+}
+
+.socialitem-footer a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* --------------------------------------------------------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -261,7 +264,7 @@ a.category-badge > span.badge:hover {
 }
 
 
-/* -------------------------------- Media Queries */
+/* --------------------------------------------------------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -286,6 +289,7 @@ a.category-badge > span.badge:hover {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
+/* small screens */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 220px;
@@ -296,8 +300,18 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* adjust card sizes on extra small screens */
+/* extra small screens */
+@media (max-width: 341px) {
+    .header-container {
+        padding-top: 300px;
+    }
 
+    body {
+        height: calc(100vh - 300px);
+    }
+}
+
+/* adjust card sizes on extra small screens */
 @media (max-width: 600px) {
     .card-img-top {
         width: 100%;
@@ -307,7 +321,6 @@ a.category-badge > span.badge:hover {
 }
 
 /* adjust card sizes on small screens */
-
 @media (min-width: 600px) and (max-width: 992px) {
     .card-img-top {
         width: 100%;
@@ -315,3 +328,9 @@ a.category-badge > span.badge:hover {
         object-fit: cover;
     }
 }
+
+/* adjust heading size on home page on smaller screens */
+@media (max-width: 600px) {
+    .heading-font {
+        font-size:xx-large;
+        }
