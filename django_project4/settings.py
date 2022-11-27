@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['milestone-p4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://git.heroku.com/milestone-p4.git', 'localhost']
 
 
 # Application definition
