@@ -243,7 +243,6 @@ input[name='q']::placeholder {
 }
 
 
-
 /* --------------------------------------------------------------------------------- Allauth form formatting*/
 
 .allauth-form-inner-content p {
@@ -377,22 +376,11 @@ input[name='q']::placeholder {
 /* small screens */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 220px;
+        padding-top: 200px;
     }
 
     body {
-        height: calc(100vh - 220px);
-    }
-}
-
-/* extra small screens */
-@media (max-width: 341px) {
-    .header-container {
-        padding-top: 300px;
-    }
-
-    body {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 200px);
     }
 }
 
@@ -419,3 +407,32 @@ input[name='q']::placeholder {
     .heading-font {
         font-size:xx-large;
         }
+    }
+
+/* stop delivery banner text wrapping on small screens */
+
+@media (max-width: 911px) {
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+    .content-footer {
+        padding-top: .25rem;
+    }
+}
