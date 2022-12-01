@@ -409,6 +409,15 @@ input[name='q']::placeholder {
         }
     }
 
+/* adjust text size on contact us page on smaller screens */
+@media (max-width: 600px) {
+    .contact-us,
+    .contact-us i,
+    .contact-us h2 {
+        font-size:large;
+        }
+    }
+
 /* stop delivery banner text wrapping on small screens */
 
 @media (max-width: 911px) {
