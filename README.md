@@ -1,8 +1,8 @@
 <h1 align="center">Home Learning</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://milestone-p4.herokuapp.com/)
 
-This is an ecommerce site, selling leanring curricula to parents and teachers. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
+This is an ecommerce site, selling learning curricula to parents and teachers. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
@@ -14,11 +14,17 @@ This is an ecommerce site, selling leanring curricula to parents and teachers. I
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are .
+        -   White is the predominant colour on the site, creating a clean and clear background.  The rainbow-coloured logo design and multi-coloured pencils in the hero image are eye-catching and represent the different styles of learning:
+            - Red is physical
+            - Orange is for passion and fun
+            - Yellow is creative and emotional
+            - Green represents nature and the environment
+            - Blue is logical and intellectual
+            - Purple throws in a bit of luxury and decadence
     -   #### Typography
         -   Roboto is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. It is a clean font which clearly communicates a feeling of professionalism and authenticity to the user.  Fuzzy Bubble is used as the logo font to offer a friendly and welcoming feel to the company.
     -   #### Imagery
-        -   The large, background hero image is designed to be bold and catch the user's attention. The image of books is directly linked to the educational content being sold on the site and so is relevant and descriptive.
+        -   The white background of the hero image allows for a clean and clear layout, with the bold and colourful side image catching the user's attention. The image of pencils is directly linked to the educational content being sold on the site and so is relevant and descriptive.
 
 *   ### Wireframes
 
@@ -39,17 +45,17 @@ This is an ecommerce site, selling leanring curricula to parents and teachers. I
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   Javascript
--   Python and Django
+-   [Javascript](https://www.javascript.com/)
+-   [Python](https://www.python.org/)
 
 ### Frameworks, Libraries & Programs Used
 
 1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+    - Hover.css was used on buttons throughout the site
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Fuzzy Bubble' and 'Roboto' fonts into the style.css file which are used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
@@ -58,12 +64,17 @@ This is an ecommerce site, selling leanring curricula to parents and teachers. I
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-1. A database
 1. [Kaggle:](https://www.kaggle.com/)
+1. [ElephantDQL](https://www.elephantsql.com/)
+    - PostgreSQL database
+1. [Stripe](https://stripe.com/gb)
+    - Stripe is used to manage payments
+1. [Heroku](https://www.heroku.com/)
+    - Heroku was used to deploy the site
+1. [Django](https://www.djangoproject.com/)
+    - Django framework.
 
 ## Testing
 
@@ -90,9 +101,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   On some mobile devices the checkout page layout gets squashed and the +/- buttons are oddly positioned.
 
 ## Deployment
 
@@ -122,7 +131,7 @@ Check details to put here!
 
 ### Media
 
--   Website background is a mirrored version of a photo by [Kimberly Farmer](https://unsplash.com/@kimberlyfarmer) on [Unsplash](https://unsplash.com/photos/lUaaKCUANVI)
+-   Website background is a mirrored version of a photo by [Kelly Tungay](https://unsplash.com/@kellitungay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 -   Pencils photo by [Jess Bailey](https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
@@ -132,17 +141,17 @@ Check details to put here!
 
 -   Pyramids photo by [Shotaro Hamasaki](https://unsplash.com/ja/@_shography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pyramids%27?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
--  Globe Photo by <a href="https://unsplash.com/@amyjoyhumphries?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amy Humphries</a> on <a href="https://unsplash.com/s/photos/globe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+-  Globe Photo by [Amy Humphries](https://unsplash.com/@amyjoyhumphries?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/globe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 
--  Chemistry photo Photo by <a href="https://unsplash.com/@myphotocave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raghav Bhasin</a> on <a href="https://unsplash.com/s/photos/chemistry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+-  Chemistry Photo by [Raghav Bhasin](https://unsplash.com/@myphotocave?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/chemistry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   
 
--  Computing photo Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+-  Computing Photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
--  Dice photo by Photo by <a href="https://unsplash.com/@grizzlybear?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Petersson</a> on <a href="https://unsplash.com/s/photos/bingo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+-  Dice Photo by [Jonathan Petersson](https://unsplash.com/@grizzlybear?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bingo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-- Mystery photo by Photo by <a href="https://unsplash.com/@mediamodifier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mediamodifier</a> on <a href="https://unsplash.com/s/photos/detective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Mystery Photo by [Media Modifier](https://unsplash.com/@mediamodifier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/detective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   
   
   
