@@ -27,5 +27,4 @@ def add_to_wishlist(request, item_id):
         messages.success(request, f'Added {product.name} to your wishlist')
 
     request.session['wishlist'] = wishlist
-    print(request.session['wishlist'])
     return redirect(redirect_url)
