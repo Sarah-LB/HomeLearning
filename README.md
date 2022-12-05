@@ -4,7 +4,7 @@
 
 This is an ecommerce site, selling learning curricula to parents and teachers. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="media/homepage_image_small.png"></h2>
 
 ## User Experience (UX)
 
@@ -28,7 +28,14 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 *   ### Wireframes
 
-    Wireframes can be found [here](#)
+    -   [Home](media/home.png)
+    -   [About](media/about.png)
+    -   [Products](media/products.png)
+    -   [Product Details](media/product_details.png)
+    -   [Contact](media/contact.png)
+    -   [Shopping Bag](media/bag.png)
+    -   [Checkout](media/checkout.png)
+
 
 ## Features
 
@@ -98,6 +105,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Problems Encountered
 
 -  Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
+
+-   Contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
 
 ### Known Bugs
 
