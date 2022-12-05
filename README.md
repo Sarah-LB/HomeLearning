@@ -45,6 +45,10 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 -   Stripe payments
 
+## Future Features
+
+-   A messaging service for logged in users via the Account tab.  When registered users submit a contact form it will be stored in their Account as part of the messaging service.
+
 
 ## Technologies Used
 
