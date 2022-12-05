@@ -88,6 +88,9 @@
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                                 <input type="submit" class="btn btn-black rounded-4 text-uppercase mt-5" value="Add to Bag">
+                                {% if request.user.is_authenticated %}
+                                <input type="submit" class="btn btn-info rounded-4 text-uppercase mt-5" value="Add to Wishlist">
+                                {% endif %}
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
