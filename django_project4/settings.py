@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'profiles',
     'contact',
     'active_link',
+    'reviews',
 
     # Other
     'crispy_forms',
