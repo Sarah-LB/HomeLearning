@@ -49,6 +49,8 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 -   A messaging service for logged in users via the Account tab.  When registered users submit a contact form it will be stored in their Account as part of the messaging service.
 
+-   Add a rating input in the reviews form and then calculate an average user rating for each product.
+
 
 ## Technologies Used
 

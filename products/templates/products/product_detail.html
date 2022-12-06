@@ -92,25 +92,36 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
-                    {% if request.user.is_authenticated %}
-                    <form class="form" action="{% url 'add_to_wishlist' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            <div class="col-12">
-                                <input type="submit" class="btn btn-info rounded-4 text-uppercase mt-5" value="Add to Wishlist">
-                                {% endif%}
-                                <div class="form-group w-50">
-                                        <input class="form-control qty_input" type="hidden"
-                                            name="quantity" value="1" min="1" max="99"
-                                            data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        </div>
-                    </form>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h3 class="orange-subheading-font">Latest reviews</h3>
+                {% if latest_review_list %}
+                    <div>
+                    {% for review in latest_review_list %}
+                        <div>
+                             <h4><a href="{% url 'product_detail' product.id %}">
+                            <p>{{ review.comment }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% else %}
+                <p>No reviews are available. Be the first to review this product!</p>
+                {% endif %}
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h3 class="orange-subheading-font">Add your review</h3>
+                {% if request.user.is_authenticated %}
+                    <form action="{% url 'product_detail' product.id %}" method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                        <input type="submit" value="Add" />
+                    </form>
+                {% else %}
+                    <span><a href="{% url 'account_login' %}">Sign in</a> to leave a review.</span>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -121,3 +132,6 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
+
+
+
