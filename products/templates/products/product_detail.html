@@ -101,6 +101,7 @@
                 {% if latest_review_list %}
                     <div>
                     {% for review in latest_review_list %}
+                        {% if review.name == request.product.name %}
                         <div class="card border-2 p-2 mr-4 mb-4">
                             <div class="card-body p-0">
                                 <div class="row">
@@ -118,6 +119,7 @@
                                 </div> 
                             </div>
                         </div>
+                        {% endif %}
                     {% endfor %}
                     </div>
                 {% else %}
