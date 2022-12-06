@@ -110,9 +110,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Problems Encountered
 
--  Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
+-   Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
 
 -   Contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
+
+-   Originally teh review form has a user field which I wanted populated with the logged in user's username and readonly.  After attempting many different combinations of form, view and html and not quite managing to mamke any of them work as needed, I decided to place the username outside of the form with the same results as I had hoped for.
 
 ### Known Bugs
 

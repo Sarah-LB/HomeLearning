@@ -25,7 +25,7 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = UserReview
-        fields = ["user", 'title', 'content']
+        fields = ['title', 'content']
         widgets = {
-            'content': Textarea(attrs={'cols': 40, 'rows': 15})
+            'content': Textarea(attrs={'cols': 40, 'rows': 10})
         }

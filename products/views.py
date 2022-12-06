@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+import logging
+from pprint import pprint
 
 
 from .models import Product, Category, UserReview
@@ -67,17 +69,19 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     review = Product.objects.get(id=product_id)
     form = ReviewForm(request.POST)
-    latest_review_list = UserReview.objects.order_by('-date')[:9]
+    latest_review_list = UserReview.objects.filter(product_id=product_id).order_by('-date')[:9]
 
-    if form.is_valid():
-        user = request.POST.get('user')
-        content = request.POST.get('content')
-        title = request.POST.get('title')
-        review = UserReview(user=request.user, content=content, product=review, title=title)
-        review.save()
-        messages.success(request, 'Successfully added a review!')
-        return redirect(reverse('product_detail', args=[product.id]))
-
+    if request.method == 'POST':
+        if form.is_valid():
+            userReview = form.save(commit=False)
+            userReview.user = request.user
+            userReview.product = product
+            userReview.save()
+            messages.success(request, 'Successfully added a review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+    
+    else:
+        form = ReviewForm()
 
     context = {
         'product': product,
@@ -87,6 +91,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 
 @login_required
