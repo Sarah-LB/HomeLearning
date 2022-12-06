@@ -71,8 +71,9 @@ def product_detail(request, product_id):
 
     if form.is_valid():
         user = request.POST.get('user')
-        comment = request.POST.get('comment')
-        review = UserReview(user=user, comment=comment , product=review)
+        content = request.POST.get('content')
+        title = request.POST.get('title')
+        review = UserReview(user=request.user, content=content, product=review, title=title)
         review.save()
         messages.success(request, 'Successfully added a review!')
         return redirect(reverse('product_detail', args=[product.id]))
@@ -81,7 +82,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'form': form,
-        'latest_review_list':latest_review_list
+        'latest_review_list': latest_review_list
     }
 
     return render(request, 'products/product_detail.html', context)

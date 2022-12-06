@@ -45,4 +45,4 @@ class UserReview(models.Model):
     content = models.TextField(max_length=2000)
 
     def __str__(self):
-        return self.subject
+        return self.title

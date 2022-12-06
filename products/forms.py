@@ -1,7 +1,7 @@
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Product, Category, UserReview
-
+from django.forms import Textarea
 
 class ProductForm(forms.ModelForm):
 
@@ -26,3 +26,6 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = UserReview
         fields = ["user", 'title', 'content']
+        widgets = {
+            'content': Textarea(attrs={'cols': 40, 'rows': 15})
+        }
