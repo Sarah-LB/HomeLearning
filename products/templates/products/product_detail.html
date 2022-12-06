@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="row nogutters">
+        <div class="row nogutters mt-4">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <h3 class="orange-subheading-font">Latest reviews</h3>
                 {% if latest_review_list %}
@@ -132,7 +132,7 @@
                 <p>No reviews are available. Be the first to review this product!</p>
                 {% endif %}
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 ml-4">
                 <h3 class="orange-subheading-font">Add your review ({{ request.user.username}})</h3>
                 {% if request.user.is_authenticated %}
                     <form action="{% url 'product_detail' product.id %}" method="post">
