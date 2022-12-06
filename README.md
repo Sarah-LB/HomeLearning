@@ -45,11 +45,19 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 -   Stripe payments
 
+-   Registered users can leave reviews for products.  These can help future customers to make a more informed choice about their purchases.
+
+-   A contact form is provided so that users can get in touch with the company directly through the site.
+
 ## Future Features
 
--   A messaging service for logged in users via the Account tab.  When registered users submit a contact form it will be stored in their Account as part of the messaging service.
+-   Create a messaging service for logged in users via the Account tab.  When registered users submit a contact form it will be stored in their Account as part of the messaging service.
 
--   Add a rating input in the reviews form and then calculate an average user rating for each product.
+-   The data from the contact form is currently only stored in the database.  Create a "receive a copy by email" option so unregistered users can have a record of the communication.
+
+-   Improve the review setup:   -   Add a rating input in the reviews form and then calculate an average user rating for each product.
+                                -   Only allow a user to submit a single review for each product.
+                                -   Only allow users who have previously bought a product to rate and review it.
 
 
 ## Technologies Used

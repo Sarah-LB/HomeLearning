@@ -54,7 +54,7 @@
                                     <td class="py-3">
                                         <p class="my-0">&pound{{ item.product.price }}</p>
                                     </td>
-                                    <td class="py-3 w-25 d-none d-md-block">
+                                    <td class="py-3 w-25 d-none d-md-inline mr-2">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
