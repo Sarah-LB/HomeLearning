@@ -120,13 +120,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
 
--   Contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
+-   Contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration and tourbleshooting/attempted fixes, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
 
--   Originally teh review form has a user field which I wanted populated with the logged in user's username and readonly.  After attempting many different combinations of form, view and html and not quite managing to mamke any of them work as needed, I decided to place the username outside of the form with the same results as I had hoped for.
+-   Originally the review form had a user field which I wanted to populate with the logged in user's username and for it to be readonly.  After attempting many different combinations of form, view and html and not quite managing to make any of them work as needed, I decided to place the username outside of the form which had the desired result.
+
+-   The edit review form caused some issues.  I was orginally declaring a specific instance of the form, editing the form data and then saving it to the database.  There were lots of errors!  I eventually realised that the form didn't contain all the fields in the model so it wasn't able to match the form data to the database record and I needed to update only the specific fields from the form.  In addition to that, when I edited the instance of the form and pressed submit the form was being declared invalid so I had to move the form declarations around a bit to make it work.
 
 ### Known Bugs
-
--   On some mobile devices the checkout page layout gets squashed and the +/- buttons are oddly positioned.
 
 ## Deployment
 

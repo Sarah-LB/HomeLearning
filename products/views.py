@@ -3,12 +3,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-import logging
-from pprint import pprint
-
 
 from .models import Product, Category, UserReview
 from .forms import ProductForm, ReviewForm
+
+import logging
 
 
 # Create your views here.
@@ -160,3 +159,44 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def edit_review(request, review_id):
+    """ User can edit a product review """
+    review = UserReview.objects.get(id=review_id)
+    product = review.product
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            updateReview = form.save(commit=False)
+            review.title = updateReview.title
+            review.content = updateReview.content
+            review.save()
+            messages.success(request, 'You have successfully updated your review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update. Please ensure the form is valid.')
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'products/edit_review.html'
+    context = {
+        'form': form,
+        'review': review,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """ Delete a user review """
+
+    review = UserReview.objects.get(id=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=[product.id]))
