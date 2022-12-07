@@ -164,7 +164,7 @@ def delete_product(request, product_id):
 @login_required
 def edit_review(request, review_id):
     """ User can edit a product review """
-    review = UserReview.objects.get(id=review_id)
+    review = get_object_or_404(UserReview, pk=review_id)
     product = review.product
 
     if request.method == 'POST':
@@ -196,7 +196,7 @@ def edit_review(request, review_id):
 def delete_review(request, review_id):
     """ Delete a user review """
 
-    review = UserReview.objects.get(id=review_id)
+    review = get_object_or_404(UserReview, pk=review_id)
     product = review.product
     review.delete()
     messages.success(request, 'Review deleted!')
