@@ -105,6 +105,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   Javascript validator
 
+-   logging
+
 ### Testing User Stories from User Experience (UX) Section
 
     Testing user stories information can be found [here](#)

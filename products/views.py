@@ -197,6 +197,7 @@ def delete_review(request, review_id):
     """ Delete a user review """
 
     review = UserReview.objects.get(id=review_id)
+    product = review.product
     review.delete()
     messages.success(request, 'Review deleted!')
     return redirect(reverse('product_detail', args=[product.id]))
