@@ -10,7 +10,8 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 -   ### User stories
 
-    User stories can be found [here](#)
+-    [User stories part 1](media/userstories1.png)
+-    [User stories part 2](media/userstories2.png)
 
 -   ### Design
     -   #### Colour Scheme
@@ -35,6 +36,9 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
     -   [Contact](media/contact.png)
     -   [Shopping Bag](media/bag.png)
     -   [Checkout](media/checkout.png)
+
+*   ### Database Schema
+    [Entity Relationship Diagram](media/er_diagram_mp4.png)
 
 
 ## Features
@@ -109,7 +113,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories from User Experience (UX) Section
 
-    Testing user stories information can be found [here](#)
+-   Testing user stories information:
+    -   [User stories part 1](media/userstories1completed.png)
+    -   [User stories part 2](media/userstories2completed.png)
 
 ### Further Testing
 
@@ -120,9 +126,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Problems Encountered
 
--   Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes.
+-   Trying to obtain cards of the same size with the same image dimensions but with good proportions across the range of screen sizes took time.
 
--   Contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration and tourbleshooting/attempted fixes, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
+-   The contact form was working locally but when posting the form on the deployed app it was generating a 500 error.  After hours of frustration and tourbleshooting/attempted fixes, I contacted Tutor Support, who suggested migrating with a heroku prefix and all was solved.
 
 -   Originally the review form had a user field which I wanted to populate with the logged in user's username and for it to be readonly.  After attempting many different combinations of form, view and html and not quite managing to make any of them work as needed, I decided to place the username outside of the form which had the desired result.
 
@@ -207,8 +213,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
 
 -   Rainbow gradient used for the logo-font class was taken from [We Learn to Code](https://welearncode.com/rainbow-text/)
 
