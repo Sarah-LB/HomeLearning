@@ -132,7 +132,75 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Deployment
 
-Check details to put here!
+### Heroku
+
+The project was deployed to Heroku using [this](https://devcenter.heroku.com/articles/git) method, summarized here...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Log in to [Heroku](https://heroku.com/) and create your app.
+3. Link your heroku app to your github repo.
+4. Allow automatic deployment to GitHub.
+
+### AWS
+
+The static files need to be deployed separately [aws](https://aws.amazon.com/) was used:
+
+1. Create an S3 bucket.
+2. Create a group and add a full s3 policy, specifying the location ARM.
+3. Create a user, allowing programmatic access.
+4. Connect to django by install boto3 and django-storages.
+5. Upload the site images and static files to the S3 bucket.
+
+### ElephantSQL
+
+To transfer the database:
+
+1. Login/Register at [ElephantSQL](ElephantSQL.com).
+2. Create a New Instance.
+3. Use the terminal to install dj_database_url and psycopg2.
+4. Import os and dj_database_url into settings.py.
+5. Comment out the sqite3 database connection and add a connection to ElephantSQL with 'default': dj_database_url.parse('your-database-url-here')
+6. Migrate
+7. Load the categories:  python3 manage.py loaddata categories
+8. Load the products:  python3 manage.py loaddata products
+9. Create a superuser
+10. Delete the ElephantSQL connection in settings.py and reinstate the sqlite3 connection.
+
+
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 ## Credits
 
