@@ -107,7 +107,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator]() - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmilestone-p4.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
--   Javascript validator
+-   [Javascript validator](https://jshint.com/)
 -   Lighthouse test on mobile site - [Results](media/lighthouse_mobile.png)
 -   Lighthouse test on desktop site - [Results](media/lighthouse_desktop.png)
 -   
