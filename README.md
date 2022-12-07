@@ -105,11 +105,12 @@ This is an ecommerce site, selling learning curricula to parents and teachers. I
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator]() - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmilestone-p4.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 -   Javascript validator
-
--   logging
+-   Lighthouse test on mobile site - [Results](media/lighthouse_mobile.png)
+-   Lighthouse test on desktop site - [Results](media/lighthouse_desktop.png)
+-   
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -119,10 +120,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & Galaxy Fold.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.  They created test accounts, reviews, orders and enquiries to make sure the site was working properly.
 
 ### Problems Encountered
 
@@ -132,7 +133,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   Originally the review form had a user field which I wanted to populate with the logged in user's username and for it to be readonly.  After attempting many different combinations of form, view and html and not quite managing to make any of them work as needed, I decided to place the username outside of the form which had the desired result.
 
--   The edit review form caused some issues.  I was orginally declaring a specific instance of the form, editing the form data and then saving it to the database.  There were lots of errors!  I eventually realised that the form didn't contain all the fields in the model so it wasn't able to match the form data to the database record and I needed to update only the specific fields from the form.  In addition to that, when I edited the instance of the form and pressed submit the form was being declared invalid so I had to move the form declarations around a bit to make it work.
+-   The edit review form caused some issues.  I was orginally declaring a specific instance of the form, editing the form data and then saving it to the database.  There were lots of errors!  I eventually realised that the form didn't contain all the fields in the model so it wasn't able to match the form data to the database record and I needed to update only the specific fields from the form.  In addition to that, when I edited the instance of the form and pressed submit the form was being declared invalid so I had to move the form declarations around a bit to make it work.  During this process, I discovered how to use logging to determine where the error was coming from.
 
 ### Known Bugs
 
